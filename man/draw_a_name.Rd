@@ -2,7 +2,7 @@
 % Please edit documentation in R/draw_a_name.R
 \name{draw_a_name}
 \alias{draw_a_name}
-\title{Function drawing the evolution of neonates names by year for a chosen name}
+\title{Function drawing the evolution of given names by year for a chosen name}
 \usage{
 draw_a_name(the_name, the_sex)
 }
@@ -15,7 +15,7 @@ draw_a_name(the_name, the_sex)
 ggplot of the_name
 }
 \description{
-Function drawing the evolution of neonates names by year for a chosen name
+Function drawing the evolution of given names by year for a chosen name
 }
 \examples{
 draw_a_name("Viktor","M")

@@ -7,7 +7,7 @@
 #' @importFrom utils read.csv2
 #'
 #' @examples
-#' \dontrun {
+#' \dontrun{
 #'
 #' my_csv_reader("../../path/to/folder")
 #'

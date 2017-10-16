@@ -16,7 +16,7 @@ a list
 Import multiple csv files
 }
 \examples{
-\dontrun {
+\dontrun{
 
 my_csv_reader("../../path/to/folder")
 
