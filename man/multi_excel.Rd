@@ -17,6 +17,6 @@ Extract all excel sheets from a file into a list
 }
 \examples{
 \dontrun{
- multi_excel("..")
+ multi_excel("...xlsx")
 }
 }

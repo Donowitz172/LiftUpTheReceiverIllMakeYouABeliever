@@ -9,6 +9,8 @@
 #' @import ggplot2
 #' @import ggthemes
 #'
+#' @import assertthat
+#'
 #' @export
 #'
 #' @examples
@@ -17,6 +19,10 @@
 #'
 
 draw_a_name <- function(the_name, the_sex) {
+
+  assert_that(the_sex %in% c("M", "F"))
+
+  assert_that(is.character(the_name))
 
   l <- prenoms::prenoms %>%
 

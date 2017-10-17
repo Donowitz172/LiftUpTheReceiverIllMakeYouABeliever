@@ -5,6 +5,7 @@
 #' @import dplyr
 #' @import ggplot2
 #' @import ggthemes
+#' @import assertthat
 #'
 #' @return ggplot of names
 #' @export
@@ -14,6 +15,8 @@
 #' draw_names(c("Viktor","Jacques"))
 
 draw_names <- function(name_vector){
+
+  assert_that(is.character(name_vector))
 
   l <- prenoms::prenoms %>%
 

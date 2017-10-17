@@ -3,6 +3,7 @@
 #' @param file_name name of the saved file
 #' @param df dataframe
 #'
+#' @import assertthat
 #'
 #' @return NULL
 #' @export
@@ -12,8 +13,10 @@
 
 save_as_csv <- function(df, file_name){
 
-  if(!grepl("*\\.csv$",file_name)) file_name <- paste(file_name,".csv",sep="")
+  assert_that(is.data.frame(df))
+
+  file_name <- paste(file_name,".csv",sep="")
   write.csv(df, file=file_name, row.names = F)
-  return()
+  return("The csv file has been saved in the project directory")
 
 }
